@@ -5,6 +5,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9010/eureka
 spring:
+  main:
+    webApplicationType: reactive
   application:
     name: gateway-service
   cloud:
