@@ -1,6 +1,6 @@
 spring:
   application:
-    name: shopping-service
+    name: movies-service
   profiles:
     active: dev
   boot:
@@ -8,23 +8,15 @@ spring:
       client:
         url: http://localhost:9020
         instance:
-          name: Shopping API Service
+          name: Movies API Service
 server:
   servlet:
     context-path: /store/api/v1
-  port: 9070
+  port: 9050
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9010/eureka
-feign:
-  circuitbreaker:
-    enabled: true
-  client:
-    config:
-      default:
-        connectTimeout: 5000
-        readTimeout: 5000
 management:
   endpoints:
     web:

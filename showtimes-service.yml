@@ -1,6 +1,6 @@
 spring:
   application:
-    name: product-service
+    name: showtimes-service
   profiles:
     active: dev
   boot:
@@ -8,11 +8,11 @@ spring:
       client:
         url: http://localhost:9020
         instance:
-          name: Product API Service
+          name: Showtimes API Service
 server:
   servlet:
     context-path: /store/api/v1
-  port: 9050
+  port: 9030
 eureka:
   client:
     serviceUrl:
